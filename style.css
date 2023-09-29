@@ -1,0 +1,525 @@
+body {
+  width: 100%;
+  height: 800px;
+  margin: 0px;
+  padding: 0px;
+  background-color: hsl(217deg, 100%, 97%);
+  font-family: "Ubuntu";
+  font-weight: 400;
+  color: hsl(213deg, 96%, 18%);
+  font-size: 16px;
+}
+body .contenair {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  background: hsl(231deg, 100%, 99%);
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 600px;
+  border-radius: 15px;
+}
+
+.Sidebar-start {
+  border-radius: 10px;
+  width: 275px;
+  background: url("./images/bg-sidebar-desktop.svg");
+  margin: 15px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.Sidebar-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  flex: 55%;
+}
+.Sidebar-end #body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+}
+.Sidebar-end #dynamic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Sidebar-end #dynamic label {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.Sidebar-end #footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.Sidebar-end #footer button {
+  width: 100px;
+  height: 50px;
+  border-radius: 7.5px;
+}
+.Sidebar-end #footer .Next-Step {
+  background: hsl(213deg, 96%, 18%);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: hsl(231deg, 100%, 99%);
+}
+.Sidebar-end #footer .Next-Step:hover {
+  background: hsl(213deg, 96%, 28%);
+  cursor: pointer;
+}
+.Sidebar-end #footer #confirm {
+  background: hsl(243deg, 100%, 62%);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: hsl(231deg, 100%, 99%);
+}
+.Sidebar-end #footer #confirm:hover {
+  background: hsl(243deg, 100%, 72%);
+  cursor: pointer;
+}
+.Sidebar-end #footer #goBack {
+  background: hsl(231deg, 100%, 99%);
+  border: 1px solid hsl(231deg, 100%, 99%);
+  color: hsl(229deg, 24%, 87%);
+}
+.Sidebar-end #footer #goBack:hover {
+  color: hsl(213deg, 96%, 18%);
+  cursor: pointer;
+}
+
+#step1, #step2, #step3, #step4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.index {
+  color: hsl(206deg, 94%, 87%);
+  font-weight: 300;
+}
+
+#contenair1, #contenair2, #contenair3, #contenair4 {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+#contenair1:hover, #contenair2:hover, #contenair3:hover, #contenair4:hover {
+  cursor: pointer;
+}
+#contenair1 .number, #contenair2 .number, #contenair3 .number, #contenair4 .number {
+  width: 30px;
+  height: 25px;
+  border-radius: 25px;
+  padding-top: 5px;
+  border: 1px solid white;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+#body1 #contenair1 .number, #body2 #contenair2 .number, #body3 #contenair3 .number, #body4 #contenair4 .number, #body5 #contenair4 .number {
+  background: hsl(206deg, 94%, 87%);
+  border: 1px solid hsl(206deg, 94%, 87%);
+  color: hsl(213deg, 96%, 18%);
+}
+
+#body1 .Sidebar-end #footer {
+  justify-content: end;
+}
+#body1 .Sidebar-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 50px 20px 50px;
+  flex: 55%;
+}
+#body1 .Sidebar-end #body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+}
+#body1 .Sidebar-end #dynamic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#body1 .Sidebar-end #dynamic input {
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 7.5px;
+  padding-left: 10px;
+  border: 1px solid hsl(229deg, 24%, 87%);
+}
+#body1 .Sidebar-end #dynamic input:hover {
+  cursor: pointer;
+}
+#body1 .Sidebar-end #dynamic input:focus {
+  outline: none;
+  border: 1px solid hsl(213deg, 96%, 28%);
+}
+#body1 .Sidebar-end #dynamic input::-webkit-outer-spin-button, #body1 .Sidebar-end #dynamic input input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+#body1 .Sidebar-end #dynamic label {
+  display: flex;
+  justify-content: space-between;
+}
+#body1 .Sidebar-end #dynamic label span {
+  color: hsl(354deg, 84%, 57%);
+}
+
+#body2 .Sidebar-end {
+  display: flex;
+  width: 542.133px;
+}
+#body2 .Sidebar-end #dynamic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#body2 .Sidebar-end #select {
+  align-self: self-end;
+  justify-self: self-end;
+  flex-grow: 8;
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  margin-top: 20px;
+  border-radius: 7.5px;
+  background: hsl(217deg, 100%, 97%);
+  align-items: center;
+  justify-content: center;
+}
+#body2 .Sidebar-end #select p:hover {
+  cursor: pointer;
+}
+#body2 .Sidebar-end #remote-control {
+  width: 28px;
+  height: 14px;
+  border-radius: 16px;
+  background-color: hsl(213deg, 96%, 18%);
+  padding: 2px;
+  margin: 0px 20px;
+}
+#body2 .Sidebar-end #remote-control:hover {
+  cursor: pointer;
+}
+#body2 .Sidebar-end #button {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 16px;
+  background: hsl(0deg, 0%, 100%);
+}
+#body2 .Sidebar-end #button:hover {
+  cursor: pointer;
+  background: hsl(0deg, 0%, 80%);
+}
+#body2 .Sidebar-end #yearly {
+  color: hsl(229deg, 24%, 87%);
+}
+#body2 .Sidebar-end #yearly:hover {
+  cursor: pointer;
+  color: hsl(213deg, 96%, 18%);
+}
+#body2 .Sidebar-end .dyn {
+  border: 1px solid hsl(229deg, 24%, 87%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  width: 125px;
+  height: 160px;
+  border-radius: 7.5px;
+}
+#body2 .Sidebar-end .dyn div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  margin: 0px;
+  padding: 0px;
+}
+#body2 .Sidebar-end .dyn h1 {
+  font-size: 16px;
+  font-weight: 400px;
+  margin: 0px;
+  padding: 0px;
+}
+#body2 .Sidebar-end .dyn p {
+  color: hsl(229deg, 24%, 87%);
+  margin: 0px;
+  padding: 0px;
+}
+#body2 .Sidebar-end .dyn span {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+}
+#body2 .Sidebar-end .dyn img {
+  width: 50px;
+}
+#body2 .Sidebar-end .dyn:hover {
+  border: 1px solid hsl(213deg, 96%, 18%);
+  cursor: pointer;
+}
+#body2 .Sidebar-end #dyn1 {
+  background: hsl(217deg, 100%, 97%);
+  border: 1px solid hsl(213deg, 96%, 18%);
+}
+
+#body3 .Sidebar-end #dynamic {
+  display: flex;
+  flex-direction: column;
+}
+#body3 .Sidebar-end label label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 100%;
+  display: flex;
+}
+#body3 .Sidebar-end label label:hover {
+  background-color: hsl(217deg, 100%, 97%);
+  cursor: pointer;
+}
+#body3 .Sidebar-end label label div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+#body3 .Sidebar-end label label div span {
+  font-weight: 400;
+  color: hsl(229deg, 24%, 87%);
+}
+#body3 .Sidebar-end label label div:hover {
+  background-color: hsl(217deg, 100%, 97%);
+  cursor: pointer;
+}
+#body3 .Sidebar-end label label span {
+  color: hsl(243deg, 100%, 62%);
+  margin-right: 20px;
+}
+#body3 .Sidebar-end label label span:hover {
+  background-color: hsl(217deg, 100%, 97%);
+  cursor: pointer;
+}
+#body3 .Sidebar-end #online, #body3 .Sidebar-end #larger, #body3 .Sidebar-end #customizable {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: start;
+  border: 1px solid hsl(213deg, 96%, 18%);
+  border-radius: 7.5px;
+  margin-bottom: 20px;
+  height: 75px;
+}
+#body3 .Sidebar-end #online:hover, #body3 .Sidebar-end #larger:hover, #body3 .Sidebar-end #customizable:hover {
+  background-color: hsl(217deg, 100%, 97%);
+  cursor: pointer;
+}
+#body3 .Sidebar-end input {
+  width: 15px;
+  height: 15px;
+  margin: 0px 20px 0px 20px;
+  margin-top: 25px;
+}
+#body3 .Sidebar-end input:hover {
+  cursor: pointer;
+}
+
+#body4 .Sidebar-end #dynamic {
+  display: flex;
+  flex-direction: column;
+}
+#body4 .Sidebar-end #dyn {
+  display: flex;
+  flex-direction: column;
+  background: hsl(217deg, 100%, 97%);
+  border-radius: 7.5px;
+}
+#body4 .Sidebar-end #plan, #body4 .Sidebar-end #online_, #body4 .Sidebar-end #larger_, #body4 .Sidebar-end #customizable_, #body4 .Sidebar-end #total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+#body4 .Sidebar-end #p-left {
+  display: flex;
+  flex-direction: column;
+}
+#body4 .Sidebar-end #line {
+  height: 0.8px;
+  background: hsl(229deg, 24%, 87%);
+  mix-blend-mode: normal;
+  margin: 0px 15px 0px 15px;
+}
+#body4 .Sidebar-end .left, #body4 .Sidebar-end #t-left {
+  color: hsl(229deg, 24%, 87%);
+}
+#body4 .Sidebar-end #change {
+  color: hsl(229deg, 24%, 87%);
+  text-decoration: underline;
+}
+#body4 .Sidebar-end #change:hover {
+  color: hsl(243deg, 100%, 62%);
+  cursor: pointer;
+}
+#body4 .Sidebar-end #p-rigth {
+  font-weight: 700;
+}
+#body4 .Sidebar-end #t-rigth {
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(243deg, 100%, 62%);
+}
+#body4 .Sidebar-end .year_, #body4 .Sidebar-end ._year {
+  display: none;
+}
+
+#body5 img {
+  width: 200px;
+}
+#body5 .Sidebar-end {
+  width: 495px;
+}
+#body5 .Sidebar-start {
+  width: 275px;
+}
+#body5 p {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 1024px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    height: 700px;
+  }
+  body .contenair {
+    align-items: start;
+    justify-content: start;
+  }
+  .step {
+    background: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Sidebar-start {
+    border-radius: 0px;
+    width: 375px;
+    height: 200px;
+    margin: 0px;
+    background: url("./images/bg-sidebar-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+  #contenair1, #contenair2, #contenair3, #contenair4 {
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  #step1, #step2, #step3, #step4 {
+    display: none;
+    align-content: center;
+    justify-content: center;
+  }
+  .Sidebar-end {
+    position: absolute;
+    top: 100px;
+    background: hsl(231deg, 100%, 99%);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #footer {
+    position: absolute;
+    background: hsl(231deg, 100%, 99%);
+    top: 600px;
+    padding: 15px 32.5px 12.5px 20px;
+    width: 375px;
+    left: -27.5px;
+    right: 0px;
+    flex: 2 100%;
+    margin: 0px;
+  }
+  #body2 .Sidebar-end {
+    width: auto;
+  }
+  #body2 .Sidebar-end #dynamic {
+    flex-direction: column;
+  }
+  #body2 .Sidebar-end .dyn {
+    flex-direction: row;
+    padding: 15px;
+    margin-top: 10px;
+    width: 251px;
+    height: auto;
+  }
+  #body2 .Sidebar-end #select {
+    align-self: normal;
+    justify-self: normal;
+    width: 282.6px;
+  }
+  #body1, #body2, #body3, #body4, #body5 {
+    width: 375px;
+    height: 700px;
+  }
+  #body1 .Sidebar-start, #body2 .Sidebar-start, #body3 .Sidebar-start, #body4 .Sidebar-start, #body5 .Sidebar-start {
+    width: 375px;
+  }
+  #body1 .Sidebar-end, #body2 .Sidebar-end, #body3 .Sidebar-end, #body4 .Sidebar-end, #body5 .Sidebar-end {
+    width: 288.6px;
+  }
+  #body1 .Sidebar-end {
+    width: 268.6px;
+    padding: 20px 35px 20px 35px;
+  }
+  #body1 #footer {
+    padding: 15px 27.5px 0px 20px;
+  }
+  #body5 img {
+    width: 75px;
+  }
+  #body5 .Sidebar-end {
+    display: flex;
+    align-items: center;
+  }
+  #body5 h1 {
+    text-align: center;
+  }
+  #body5 #goog-gt-tt {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

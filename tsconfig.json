@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",//pour la javascript
+        //"noEmitOnError": true,//pour n'est pas compile si il y a une un erreur
+        "strict": false, //pour le mettre en stric
+        //"moduleResolution": "node",
+        //"noUncheckedIndexedAccess": true,//il va empeché de verifier la validation sans avoir verifier les indexs de chose comme le tableau. c'est truc ajouter et retirer
+        //"declaration": true,
+    },
+    "files": [
+        "script.ts",
+    ]
+}
